@@ -36,6 +36,7 @@ switch (true) {
 var a = +prompt("Введите первое число")
 var b = +prompt("Введите второе число")
 var c = +prompt("Введите третье число")
+var answer;
 
 if ((a > b && a < c) || (a < b && a > c)) {
     answer = a
@@ -45,4 +46,4 @@ if ((a > b && a < c) || (a < b && a > c)) {
     answer = c
 }
 
-alert("Среднее число: " + answer);
+alert("Среднеe число: " + answer);
