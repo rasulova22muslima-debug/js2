@@ -15,22 +15,16 @@ if (age > 0 && age <= 18) {
 
 var time = +prompt("Введите время (0-23):");
 
-switch (true) {
-    case (time > 0 && time <= 6):
-        alert(time + " часа ночи");
-        break;
-    case (time >= 7 && time <= 10):
-        alert(time + " часов утра");
-        break;
-    case (time >= 11 && time <= 17):
-        alert(time + " часа дня");
-        break;
-    case (time >= 18 && time <= 23):
-        alert(time + " часов вечера");
-        break;
-    default:
-        alert("Неточное значение. Введите от 0 до 23.");
-        break;
+if (time >= 0 && time <= 6) {
+    alert(time + " часа ночи");
+} else if (time >= 7 && time <= 10) {
+    alert(time + " часов утра");
+} else if (time >= 11 && time <= 17) {
+    alert(time + " часа дня");
+} else if (time >= 18 && time <= 23) {
+    alert(time + " часов вечера");
+} else {
+    alert("Неверное значение.Введите от 0 до 23.");
 }
 
 var a = +prompt("Введите первое число")
